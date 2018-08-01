@@ -25,7 +25,7 @@
                             {{ form.text }}
                             {% csrf_token %}
                             {% if form.errors %}
-                                <div class="form-group has-error">
+                                <div class="form-group has-error" id="error_text">
                                     <span class="help-block">{{ form.text.errors }}</span>
                                 </div>
                             {% endif %}
@@ -48,6 +48,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
                 integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
                 crossorigin="anonymous"></script>
+        <script src="{% static 'lists.js' %}"></script>
     </body>
 
 </html>
